@@ -1,27 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U39-PA-4Li">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--wait for the yellow detection dot Show Up-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="AR_Ruler" customModuleProvider="target" sceneMemberID="viewController">
                     <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </arscnView>
+                    <navigationItem key="navigationItem" title="wait for the yellow detection dot Show Up" id="FGM-ex-Js0"/>
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="375.19999999999999" y="33.733133433283363"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="434-qY-hNn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U39-PA-4Li" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EyX-51-PJb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="EHQ-j5-2YN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBf-sc-My9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-399" y="34"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="1LI-q8-KAe">
+            <objects>
+                <pageViewController storyboardIdentifier="WalkthroughController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dbx-DR-a3c" customClass="WalkthroughPageViewController" customModule="AR_Ruler" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1t-5a-Jdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="765"/>
+        </scene>
+        <!--Walkthrough Controller View Controller-->
+        <scene sceneID="JbL-QN-GQc">
+            <objects>
+                <viewController storyboardIdentifier="WalkthroughControllerViewController" id="Qvl-UK-E76" customClass="WalkthroughControllerViewController" customModule="AR_Ruler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EGa-Yd-bl9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s0G-OY-Wtv">
+                                <rect key="frame" x="26" y="109" width="322" height="277"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="277" id="8BN-rk-dwe"/>
+                                    <constraint firstAttribute="width" constant="322" id="MYk-gk-MmN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpn-03-IWG">
+                                <rect key="frame" x="0.0" y="34" width="375" height="28"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn your phone into landscape, and wait for the yellow detection dot to appear on the screenit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gr-ty-Ug6">
+                                <rect key="frame" x="46" y="433" width="282" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="2YI-rt-O8N"/>
+                                    <constraint firstAttribute="width" constant="282" id="CU9-Sd-Ljs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="V4a-5c-IY8">
+                                <rect key="frame" x="176" y="610" width="23" height="37"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgR-Zd-OQo">
+                                <rect key="frame" x="300" y="613" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="k3I-Ao-F8U"/>
+                                </constraints>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="Qvl-UK-E76" eventType="touchUpInside" id="muI-Dy-Wpb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97884327169999996" green="0.80777972939999998" blue="0.28478127720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hpn-03-IWG" firstAttribute="trailing" secondItem="e1X-KQ-svh" secondAttribute="trailing" id="Dwj-Ct-ncZ"/>
+                            <constraint firstItem="KgR-Zd-OQo" firstAttribute="centerY" secondItem="V4a-5c-IY8" secondAttribute="centerY" id="Jar-ws-4Mz"/>
+                            <constraint firstAttribute="bottom" secondItem="6gr-ty-Ug6" secondAttribute="bottom" constant="146" id="LDM-nK-Z4K"/>
+                            <constraint firstAttribute="bottom" secondItem="V4a-5c-IY8" secondAttribute="bottom" constant="20" id="UKB-hV-Len"/>
+                            <constraint firstItem="e1X-KQ-svh" firstAttribute="trailing" secondItem="6gr-ty-Ug6" secondAttribute="trailing" constant="47" id="XUO-z4-Qk7"/>
+                            <constraint firstItem="s0G-OY-Wtv" firstAttribute="top" secondItem="e1X-KQ-svh" secondAttribute="top" constant="89" id="Xh7-Gs-1Fd"/>
+                            <constraint firstItem="6gr-ty-Ug6" firstAttribute="leading" secondItem="e1X-KQ-svh" secondAttribute="leading" constant="46" id="ZDc-mX-sFO"/>
+                            <constraint firstItem="e1X-KQ-svh" firstAttribute="bottom" secondItem="s0G-OY-Wtv" secondAttribute="bottom" constant="281" id="acS-Rc-zFu"/>
+                            <constraint firstItem="e1X-KQ-svh" firstAttribute="trailing" secondItem="KgR-Zd-OQo" secondAttribute="trailing" constant="30" id="cE4-mq-mnX"/>
+                            <constraint firstItem="e1X-KQ-svh" firstAttribute="trailing" secondItem="s0G-OY-Wtv" secondAttribute="trailing" constant="27" id="ein-u8-bju"/>
+                            <constraint firstItem="s0G-OY-Wtv" firstAttribute="leading" secondItem="e1X-KQ-svh" secondAttribute="leading" constant="26" id="en5-xV-2Rj"/>
+                            <constraint firstItem="Hpn-03-IWG" firstAttribute="top" secondItem="EGa-Yd-bl9" secondAttribute="top" constant="34" id="hev-CP-nMQ"/>
+                            <constraint firstItem="s0G-OY-Wtv" firstAttribute="top" secondItem="Hpn-03-IWG" secondAttribute="bottom" constant="47" id="lO0-c3-Bzz"/>
+                            <constraint firstItem="V4a-5c-IY8" firstAttribute="centerX" secondItem="EGa-Yd-bl9" secondAttribute="centerX" id="nej-yx-Vl8"/>
+                            <constraint firstItem="6gr-ty-Ug6" firstAttribute="top" secondItem="s0G-OY-Wtv" secondAttribute="bottom" constant="47" id="raB-x8-aVN"/>
+                            <constraint firstItem="Hpn-03-IWG" firstAttribute="leading" secondItem="e1X-KQ-svh" secondAttribute="leading" id="xgN-OM-1PU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e1X-KQ-svh"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentImageView" destination="s0G-OY-Wtv" id="ag8-ZW-xgB"/>
+                        <outlet property="contentLabel" destination="6gr-ty-Ug6" id="jft-xv-pQc"/>
+                        <outlet property="forwardButton" destination="KgR-Zd-OQo" id="LeR-FM-fav"/>
+                        <outlet property="headingLabel" destination="Hpn-03-IWG" id="zR2-RI-hAu"/>
+                        <outlet property="pageControl" destination="V4a-5c-IY8" id="CoC-or-h2X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUr-Xw-Qsq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405.60000000000002" y="766.86656671664173"/>
         </scene>
     </scenes>
 </document>

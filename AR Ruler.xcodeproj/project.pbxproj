@@ -13,6 +13,8 @@
 		8E8E38E72014706500A6EE25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8E38E52014706500A6EE25 /* Main.storyboard */; };
 		8E8E38E92014706500A6EE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8E38E82014706500A6EE25 /* Assets.xcassets */; };
 		8E8E38EC2014706500A6EE25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8E38EA2014706500A6EE25 /* LaunchScreen.storyboard */; };
+		8E8E38F42016463800A6EE25 /* WalkthroughControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8E38F32016463800A6EE25 /* WalkthroughControllerViewController.swift */; };
+		8E8E38F62016480C00A6EE25 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8E38F52016480C00A6EE25 /* WalkthroughPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8E8E38E82014706500A6EE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E8E38EB2014706500A6EE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E8E38ED2014706500A6EE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E8E38F32016463800A6EE25 /* WalkthroughControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughControllerViewController.swift; sourceTree = "<group>"; };
+		8E8E38F52016480C00A6EE25 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				8E8E38E82014706500A6EE25 /* Assets.xcassets */,
 				8E8E38EA2014706500A6EE25 /* LaunchScreen.storyboard */,
 				8E8E38ED2014706500A6EE25 /* Info.plist */,
+				8E8E38F32016463800A6EE25 /* WalkthroughControllerViewController.swift */,
+				8E8E38F52016480C00A6EE25 /* WalkthroughPageViewController.swift */,
 			);
 			path = "AR Ruler";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8E38E42014706500A6EE25 /* ViewController.swift in Sources */,
+				8E8E38F42016463800A6EE25 /* WalkthroughControllerViewController.swift in Sources */,
+				8E8E38F62016480C00A6EE25 /* WalkthroughPageViewController.swift in Sources */,
 				8E8E38E02014706500A6EE25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26WBMBDFCZ;
 				INFOPLIST_FILE = "AR Ruler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appsgaga.AR-Ruler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26WBMBDFCZ;
 				INFOPLIST_FILE = "AR Ruler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appsgaga.AR-Ruler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
