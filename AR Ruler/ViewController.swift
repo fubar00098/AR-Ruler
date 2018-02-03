@@ -149,7 +149,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         self.navigationItem.title = "\(text) cm"
         
-        textGeometry.firstMaterial?.diffuse.contents = UIColor.green
+        textGeometry.firstMaterial?.diffuse.contents = UIColor.yellow
         
         textNode = SCNNode(geometry: textGeometry)
         

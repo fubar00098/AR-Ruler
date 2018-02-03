@@ -12,7 +12,7 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     var pageHeadings = ["Step 1", "Step 2"]
     var pageImages = ["AR-Ruler-1", "AR-Ruler-2"]
-    var pageContent = ["Turn your phone into landscape, and wait for the yellow detection dot to appear on the screenit.", "Touch the screen to specify the start and end positions"]
+    var pageContent = ["Turn your phone into landscape, and wait for the yellow detection dot to appear on the screenit.(等待小黃點)", "Touch the screen to specify the start and end positions.(選擇測量範圍)"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
